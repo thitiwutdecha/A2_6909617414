@@ -1,40 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Learning Portfolio</title>
+    <title>Learning Portfolio | ฐิติวุฒิ เดชา (6909617414)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-   <main class="back">
-    <h1>About Me</h1>
-    <img src="media/6909617414.jpg">
-    <p>ชื่อ:ฐิติวุฒิ เดชา</p>
-    <p>ชื่อเล่น:นัท</p>
-    <p>รหัสนักศึกษา:6909617414</p>
-    <p>สิ่งที่ชอบทำเวลาว่าง เล่นฟุตบอล,เล่นเกม,ดูการ์ตูน</p>
-   </main>
-   <section class="back2">
-    <h1>What I Built</h1>
-    <p>สร้าง Portfolio มีส่วนประกอบของ html และ css</p>
-    <p>มีclient แล้วแต่ไม่มี server ตัวเว็บเบราว์เซอร์ทำหน้าที่เป็น Client ที่เปิดอ่านไฟล์ HTML/CSS</p>
-   </section>
-   <section class="back">
-    <h1>How I Built It</h1>
-    <p>เรียนรู้จากวิชา cs 100 แล้วจึงนำมาปฎิบัติจริง</p>
-    <p><a href="https://www.w3schools.com/">และได้เรียนรู้เพิ่มเติมเรียนรู้ผ่านเว็บไซต์นี้</a></p>
-   </section>
-   <footer class="back2">
-     <h1>Reflection</h1>
-     <ul>
-        <li>ปัญหาหรือความท้าทายที่พบคืออะไร และแก้หรือรับมืออย่างไร</li>
-        <p>ลืมโค้ดคำสั่งบางตัว แก้ไขโดยการหาข้อมูลจากสไลด์ที่อาจารย์สอนและไฟล์ตัวอย่างใน courses web</p>
-        <li>จากการทำ A1 นี้ เข้าใจอะไรเกี่ยวกับการพัฒนาเว็บไซต์มากขึ้น</li>
-        <p>ต้องหมั่นฝึกฝนลงมือทำบ่อยๆและหาความรู้เพิ่มตลอดเพราะอาจจะลืมโค้ดบางตัวได้ ยิ่งทำมากเท่าไหร่จะได้ทำให้เก่งขึ้นมากเท่านั้น</p>
-        <li>หากได้พัฒนางานนี้ต่อ อยากปรับปรุงหรือเพิ่มอะไร และเพราะอะไร</li>
-        <p>เพิ่มผลงานการทำกิจกรรม การหาใบเซอร์ มาใส่ข้อมูลให้เยอะขึ้น เพราะตอนนี้ข้อมูลที่เขียนในปัจจุบันยังมีน้อยอยู่</p>
-     </ul>
-   </footer>
+
+    <header class="site-header sticky-top">
+        <nav class="navbar navbar-expand bg-white border-bottom shadow-sm">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-primary" href="#about">
+                    Thitiwut.Portfolio
+                </a>
+                <div class="navbar-nav ms-auto gap-2">
+                    <a class="nav-link px-3 active" href="#about">About Me</a>
+                    <a class="nav-link px-3" href="#portfolio">My Portfolio</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about" class="about-section py-5">
+            <div class="container">
+                <div class="row align-items-center g-4 g-lg-5">
+                    <div class="col-12 col-md-4 text-center">
+                        <div class="profile-img-wrapper mx-auto">
+                            <img src="media/6909617414.jpg" alt="ภาพถ่ายแนะนำตัว นายฐิติวุฒิ เดชา" class="img-fluid rounded-circle profile-img shadow">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-8 text-center text-md-start">
+                        <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill mb-2">CS100 Exploration of Computer Science</span>
+                        <h1 class="display-6 fw-bold mb-1">นายฐิติวุฒิ เดชา</h1>
+                        <p class="text-secondary fs-5 mb-2">ชื่อเล่น: นัท | รหัสนักศึกษา: <strong>6909617414</strong></p>
+                        <p class="lead text-dark mb-3">
+                            หลักสูตรวิทยาการคอมพิวเตอร์ (Computer Science) คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยธรรมศาสตร์
+                        </p>
+                        <div class="bio-card p-3 p-md-4 rounded-3 bg-white shadow-sm mb-3">
+                            <h2 class="h5 fw-bold text-primary mb-2">ข้อมูลแนะนำตัวและความสนใจ</h2>
+                            <p class="mb-2 text-muted">
+                                ยินดีต้อนรับสู่ Learning Portfolio ของผม เว็บไซต์นี้จัดทำขึ้นเพื่อบันทึกและสะท้อนการเรียนรู้ในรายวิชา CS100 ตลอดจนการพัฒนาทักษะด้านเทคโนโลยีสารสนเทศ การเขียนโปรแกรม และ Responsive Web Design
+                            </p>
+                            <p class="mb-0 text-muted">
+                                <strong>สิ่งที่ชอบทำในเวลาว่าง:</strong> เล่นฟุตบอล, เล่นเกม และดูการ์ตูน มีความสนใจในการเรียนรู้ด้านการพัฒนาเว็บไซต์และเทคโนโลยีดิจิทัลสมัยใหม่
+                            </p>
+                        </div>
+                        <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-2">
+                            <span class="badge bg-light text-dark border">HTML5</span>
+                            <span class="badge bg-light text-dark border">CSS3</span>
+                            <span class="badge bg-light text-dark border">Bootstrap 5</span>
+                            <span class="badge bg-light text-dark border">Responsive Web Design</span>
+                            <span class="badge bg-light text-dark border">Git & GitHub</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
 </body>
 </html>
